@@ -29,7 +29,7 @@ xui.Class('App', 'xui.Module',{
                         "sub":[
                             {
                                 "id":"a1",
-                                "caption":"button"
+                                "caption":"APLICATIE"
                             },
                             {
                                 "id":"a2",
@@ -37,12 +37,12 @@ xui.Class('App', 'xui.Module',{
                             },
                             {
                                 "id":"a3",
-                                "caption":"drop button",
+                                "caption":"FABRICA",
                                 "type":"dropButton"
                             },
                             {
                                 "id":"a4",
-                                "caption":"status button",
+                                "caption":"COMUNICARE",
                                 "type":"statusButton"
                             }
                         ],
