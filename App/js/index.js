@@ -21,12 +21,52 @@ xui.Class('App', 'xui.Module',{
             var host=this, children=[], append=function(child){children.push(child.get(0));};
             
             append(
-                xui.create("xui.UI.PageBar")
-                .setHost(host,"xui_ui_pagebar1")
-                .setLeft("0em")
-                .setTop("2.5em")
-                .setWidth("66.16666666666667em")
-                .setCaption("PageBar")
+                xui.create("xui.UI.ToolBar")
+                .setHost(host,"xui_ui_toolbar14")
+                .setItems([
+                    {
+                        "id":"grp1",
+                        "sub":[
+                            {
+                                "id":"a1",
+                                "caption":"button"
+                            },
+                            {
+                                "id":"a2",
+                                "type":"split"
+                            },
+                            {
+                                "id":"a3",
+                                "caption":"drop button",
+                                "type":"dropButton"
+                            },
+                            {
+                                "id":"a4",
+                                "caption":"status button",
+                                "type":"statusButton"
+                            }
+                        ],
+                        "caption":"grp1"
+                    },
+                    {
+                        "id":"grp2",
+                        "sub":[
+                            {
+                                "id":"b1",
+                                "imageClass":"xui-icon-xui",
+                                "caption":""
+                            },
+                            {
+                                "id":"b2",
+                                "caption":"image button",
+                                "label":"label:",
+                                "imageClass":"xui-icon-xui"
+                            }
+                        ],
+                        "caption":"grp2"
+                    }
+                ])
+                .setTop("4.166666666666667em")
             );
             
             return children;
